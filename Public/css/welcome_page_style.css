@@ -1,0 +1,32 @@
+body {
+    background-color: ;
+    opacity: 0.5;
+}
+
+/* body:hover {
+    opacity: 0.8;
+} */
+
+header {
+    width:100%;
+    text-align:center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.playerNickname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .image {
+    display:inline-block;
+    margin: 0 auto;
+    justify-items: center;
+} */
+
