@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+</head>
+
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBPta8E1l4hZxPCjACuZppIfA2SR3-4sKg",
+        authDomain: "tic-tac-toe-codecool-81fb4.firebaseapp.com",
+        databaseURL: "https://tic-tac-toe-codecool-81fb4.firebaseio.com",
+        projectId: "tic-tac-toe-codecool-81fb4",
+        storageBucket: "tic-tac-toe-codecool-81fb4.appspot.com",
+        messagingSenderId: "730668241135",
+        appId: "1:730668241135:web:6ce9f388e4b5adb70a8b1a"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // function fetchGameData() {
+    //     const nickname = firebase.database().get().nickname
+    //     const points = firebase.database().get().points
+    // }
+
+    function writeData() {
+        firebase.database().ref("User").set({
+            nickname: document.getElementById("nicknameField").value,
+            score: document.getElementById("scoreField").value
+        });
+    }
+
+    function getData() {
+        firebase.database().ref('/').once('value', function (snapshot) {
+            snapshot.forEach(function(childSnapshot)
+            {
+                var childKey = childSnapshot.key;
+                var childData = childSnapshot.val();
+                document.getElementById("data").innerHTML = childData['nickname'] + ", " + childData['points'];
+            })
+        })
+    }
+    getData()
+
+</script>
+
+<h1>User Database</h1>
+<input type="text" placeholder="nickname" id="nicknameField">
+<input type="text" placeholder="score" id="scoreField">
+<button onclick="writeData()">Submit</button>
+<p id="data"></p>
+
+</body>
+
+</html>
