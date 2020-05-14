@@ -39,7 +39,7 @@ table.board tr td {
 }
 
 
-.hiddenMessages {
+/* .hiddenMessages {
 	background: red;
 	background: -webkit-linear-gradient(red, darkred);
 	background: -o-linear-gradient(red, darkred);
@@ -51,7 +51,7 @@ table.board tr td {
 	padding: 5px;
 	display: none;
 	font-size: 20px;
-}
+} */
 
 #winnerMessageBox {
 	width: 300px;
@@ -59,18 +59,21 @@ table.board tr td {
 
 #playAgainButton {
 	cursor: pointer;
-	padding: 10px 100px;
-	font-family: 'Patrick Hand SC', cursive;
+	padding: 10px 20px;
+	border-radius: 12px;
+	background: transparent;
+	border: solid darkred;
+
 }
 
-#playAgainButton:hover {
+/* #playAgainButton:hover {
 	background: darkred;
 	background: -webkit-linear-gradient(red, darkred);
 	background: -o-linear-gradient(red, darkred);
 	background: -moz-linear-gradient(red, darkred);
 	background: linear-gradient(red, darkred);
 	opacity: 0.5;
-}
+} */
 
 footer {
 	position: relative;
@@ -118,4 +121,5 @@ footer {
 	padding: 2px;
 	font-size: 55px;
 	font-family: 'Patrick Hand SC', cursive;
+	text-shadow: 2px 2px black;
 }
