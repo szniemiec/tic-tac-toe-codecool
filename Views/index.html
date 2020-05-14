@@ -1,29 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Welcome page</title>
-      <link rel="stylesheet" href="..\Public\css\welcome_page_style.css">
-   </head>
-   <body>
-      <div class="container">
-      <div class="header">
-         <h1><img src="..\Images\coollogo_com-89251216.png"></h1>
-      </div>
-      <div class="nicknameBar">
-         <img src="..\Images\kolkokrzyzyk.png" class="image">
-         <p>Enter nickname to start game</p>
-         <div class = "labels">
-            <label for="player1"><b><img src="..\Images\player1.png" class="image"></b></label>
-            <input class="input_box" type="text" placeholder="Enter player 1 nickname" name="nickname" required>
-            <label for="player2"><b><img src="..\Images\player2.png" class="image"></b></label>
-            <input class="input_box" type="text" placeholder="Enter player 2 nickname" name="nickname" required>
-            </br>
-            <button class=startGameButton type="submit">
-                <img src="..\Images\play.png" width="100" height="80" alt="submit" />
-             </button>
-         </div>
-      </div>
-   </body>
+<meta charset="UTF-8"> 
+<html>
+	<head>
+		<title>Meateaters vs Vegans</title>
+		<link rel="stylesheet" href="Public/css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC">
+	</head>
+	<body>
+		<div align="center">
+			<h2>Meateaters vs Vegans</h2>
+
+
+
+
+			<div id="difficulty-block">
+				<label id="difficulty-label">
+					Difficulty :
+				</label>
+				<select id="difficulty-select">
+					<option value="easy">Easy</option>
+					<option value="normal" selected>Normal</option>
+				</select>
+			</div>
+
+
+
+			<table class="board" id="board" border=1>
+				<tr>
+					<td>0,0</td>
+					<td>0,1</td>
+					<td>0,2</td>
+				</tr>
+				
+				<tr>
+					<td>1,0</td>
+					<td>1,1</td>
+					<td>1,2</td>
+				</tr>
+				
+				<tr>
+					<td>2,0</td>
+					<td>2,1</td>
+					<td>2,2</td>
+				</tr>
+			</table>
+
+
+
+			<table class="scoreboard" id="scoreboard" border=0>
+				<tr>
+					<td><i class=aria-hidden="true"></i> MeatEater</td>
+					<td><i class=aria-hidden="true"></i> Vegan</td>
+				</tr>
+
+				<tr>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+			</table>
+
+
+			<div class="hiddenMessages" id="winnerMessageBox"></div>
+			<button class="hiddenMessages" id="playAgainButton" onclick="reset()">PLAY AGAIN</button>
+
+
+		<script language="Javascript" type="text/javascript" src="Public/js/main.js"></script>
+	</body>
 </html>
