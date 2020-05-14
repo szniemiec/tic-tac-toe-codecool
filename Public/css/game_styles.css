@@ -10,6 +10,7 @@
 
 body {
     margin: 0;
+    background-image: linear-gradient(#550A22,#24030d);
 }
 
 .board {
@@ -147,4 +148,15 @@ body {
 
 .winning-message.show {
     display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 0.9;
+    margin-bottom: 0em;
+    width:100%;
+    text-align:center;
+    flex-direction: column;
 }
