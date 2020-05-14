@@ -16,8 +16,8 @@ var scorePlayer2 = 0;
 
 var startingPlayer = nPlayer1;
 
-const imgPlayer1 = 'url("Public/img/p1.img")';
-const imgPlayer2 = 'url("Public/img/p2.img")';
+const imgPlayer1 = 'url("Public/img/p1.png")';
+const imgPlayer2 = 'url("Public/img/p2.png")';
 
 var board = document.getElementById("board");
 var scoreboard = document.getElementById("scoreboard");
