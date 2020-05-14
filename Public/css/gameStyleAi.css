@@ -1,6 +1,6 @@
 
 body {
-	background-color: #8b0723;
+	background-image: linear-gradient(#550A22,#24030d);
 	font-family: 'padmaa', cursive;
 }
 
@@ -16,12 +16,14 @@ table.scoreboard tr td {
 	font-size: 50px;
 }
 
+
 table.board {
 	background: red;
-	background: -webkit-linear-gradient(red, darkred);
-	background: -o-linear-gradient(red, darkred);
-	background: -moz-linear-gradient(red, darkred);
-	background: linear-gradient(red, darkred);
+	background: -webkit-linear-gradient(white, darkred);
+	background: -o-linear-gradient(white, darkred);
+	background: -moz-linear-gradient(white, darkred);
+	background: linear-gradient(white, darkred);
+	background: transparent;
 }
 
 
@@ -32,7 +34,7 @@ table.board tr td {
 	width: 100px;
 	cursor: pointer;
 	font-size: 0;
-	border: 1px solid #e0b936;
+	border: 3px solid black;
 	border-radius: 5px;
 }
 
@@ -67,6 +69,7 @@ table.board tr td {
 	background: -o-linear-gradient(red, darkred);
 	background: -moz-linear-gradient(red, darkred);
 	background: linear-gradient(red, darkred);
+	opacity: 0.5;
 }
 
 footer {
@@ -80,16 +83,17 @@ footer {
 
 #difficulty-select {
 	background: black;
-	background: -webkit-linear-gradient(red, darkred);
-	background: -o-linear-gradient(red, darkred);
-	background: -moz-linear-gradient(red, darkred);
-	background: linear-gradient(red, darkred);
-	color: black;
-	border: 0px solid black;
+	background: -webkit-linear-gradient(white, darkred);
+	background: -o-linear-gradient (black, darkred);
+	background: -moz-linear-gradient(black, darkred);
+	background: linear-gradient(black, darkred);
+	color: #f6eeba;
+	border: 3px solid black;
 	border-radius: 5px;
 	padding: 2px;
 	font-size: 55px;
 	font-family: 'Patrick Hand SC', cursive;
+	opacity: 0.4;
 }
 
 #difficulty-select option {
@@ -101,10 +105,17 @@ footer {
 }
 
 #difficulty-label {
-	color: red;
+	color:#f6eeba;
 	font-size: 60px;
 }
 
 #difficulty-block {
 	margin-bottom: 140px;
+}
+
+.paragraph {
+	color: #ded7a9 !important;
+	padding: 2px;
+	font-size: 55px;
+	font-family: 'Patrick Hand SC', cursive;
 }
