@@ -78,7 +78,7 @@ p {
 .playerVsAi{
     background-color: black;
     border-color: white;
-    opacity: 1.0;
+    opacity: 0.5;
     border: 0; 
     background: transparent
 }
